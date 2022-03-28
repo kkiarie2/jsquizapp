@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nova Square', cursive;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    color: white;
+    background-color: black;
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#highScoresList{
+  list-style: none;
+  margin-bottom: 4rem;  
+}
+.high-scores{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+#highScoresList li{
+    
+    padding: 20px;
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+a{
+    text-decoration: none;
+}

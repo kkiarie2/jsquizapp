@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Nova Square', cursive;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: black;
+
+}
+
+.justify-content{
+    display: flex;
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rbg(86, 165, 235, 0.25);
+    background-color: #56a5eb;
+    align-items: center;
+
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    transform: translate(-0.1rem);
+    transition: transform 150ms;
+    
+}
+
+
+.choice-prefix{
+    padding: 0.5rem 2.5rem;
+    color:white;
+}
+.choice-text{
+    padding: 0.5rem;
+    color: white;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 4rem;
+}
+h2{
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+
+}
+
+
+
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+
+#progressbar{
+    width: 20rem;
+    height: 3rem;
+    border:0.2rem solid #7fffaa;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+#progressbarfull{
+    height: 100%;
+    background: #7fffaa;
+    width: 0%;
+}
+
+@media screen and (max-width: 768px){
+    .choice-container{
+        min-width: 40rem;
+    }
+}
+
+
+
+.end-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+
+}
+#username{
+    margin-bottom: 3rem;
+    width: 100%;
+    outline:none;
+
+}
+#end-text{
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+}
+#saveScoreBtn{
+    border:none;
+
+}
+
+
+.btn{
+    font-size: 2.4rem;
+    width: 30rem;
+    text-align: 30rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+   
+}
+.btn:hover{
+    cursor:pointer;
+    transform: scale(1.03);
+    
+}
+btn.disabled{
+    cursor: none;
+    transform: none;
+}
